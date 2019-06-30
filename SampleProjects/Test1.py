@@ -2,7 +2,7 @@ from selenium import webdriver
 import unittest
 import HtmlTestRunner
 
-#Trying to check if the newly configured git checks any kind of changes to this file
+#Trying to check the the new build settings
 
 class YouTubeAutomation(unittest.TestCase):
 
