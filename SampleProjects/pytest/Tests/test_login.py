@@ -8,7 +8,8 @@ from SampleProjects.pytest.Page.loginPage import LoginPage
 # In pytest name of the module should start with 'test'#
 
 class TestLogin(): # In pytest name of the class should start with 'test'
-    driver = webdriver.Chrome("C:/Users/Irfan/PycharmProjects/SeleniumTest/drivers/chromedriver.exe")
+    chrome_driver = "C:\chromedriver_win32\chromedriver.exe"
+    driver = webdriver.Chrome(chrome_driver)
     @pytest.fixture() # A test fixture represents the preparation needed to perform one or more tests, and any associate cleanup actions.
     def setup(self): # In pytest name of the setup is not required to start with 'test'
         self.driver.maximize_window()
